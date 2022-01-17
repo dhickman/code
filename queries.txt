@@ -1,0 +1,31 @@
+query {
+  getPrices {
+    price
+  }
+}
+
+Result:
+{
+  "data": {
+    "getPrices": {
+      "price": {
+        "USD": {
+          "15m": 10436.54,
+          "last": 10436.54,
+          "buy": 10436.54,
+          "sell": 10436.54,
+          "symbol": "$"
+        }
+        ...
+      }
+    }
+  }
+}
+
+query($currency: String!) {
+  getPrice(currency: $currency) {
+    price
+  }
+}
+
+{"currency": "USD"}
