@@ -1,3 +1,11 @@
+How to create a simple Bitcoin API with Node.js & GraphQL
+https://levelup.gitconnected.com/how-to-create-a-simple-bitcoin-api-with-nodejs-graphql-part-i-a8cd8832fed5
+
+continuing with
+
+Generate public/private Bitcoin keys in Node — Create a simple Bitcoin API with NodeJS & GraphQL Part II
+https://levelup.gitconnected.com/how-to-create-a-simple-bitcoin-api-with-nodejs-graphql-part-ii-9b5c268f6d50
+
 query {
   getPrices {
     price
@@ -28,4 +36,5 @@ query($currency: String!) {
   }
 }
 
+# input type and value
 {"currency": "USD"}
