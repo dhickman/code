@@ -37,5 +37,5 @@ var options = {
 
 request(options,function(err, response){
     if (err) console.log(err);
-    console.log(response.body);
+    console.log(JSON.stringify(response.body, null, "  "));
 });
